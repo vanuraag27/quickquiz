@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quick Quiz</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-50 min-h-screen flex items-center justify-center">
+  <div class="w-full max-w-md bg-white p-6 rounded-xl shadow-md text-center">
+    <h1 class="text-2xl font-bold mb-4">🧠 Quick Quiz Challenge</h1>
+    
+    <div id="quiz-box" class="space-y-4">
+      <div id="question" class="text-lg font-semibold"></div>
+      <div id="options" class="space-y-2"></div>
+      <button id="next-btn" class="bg-blue-600 text-white px-4 py-2 rounded hidden">Next</button>
+    </div>
+
+    <div id="result-box" class="hidden">
+      <h2 class="text-xl font-bold mb-4">🎉 Quiz Complete!</h2>
+      <p id="score-text" class="text-lg mb-4"></p>
+      <button id="restart-btn" class="bg-green-600 text-white px-4 py-2 rounded">Restart</button>
+    </div>
+  </div>
+</body>
+</html>
